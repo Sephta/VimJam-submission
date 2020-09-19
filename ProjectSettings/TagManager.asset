@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Obstacles
+    uniqueID: 2904819327
+    locked: 0
+  - name: Creature
+    uniqueID: 1600843399
+    locked: 0
