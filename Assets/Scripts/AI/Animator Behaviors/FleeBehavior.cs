@@ -9,8 +9,13 @@ public class FleeBehavior : StateMachineBehaviour
 
     [ReadOnly] public Vector2 mousePos = Vector2.zero;
 
+    private GameObject _child = null;
+
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (_child == null)
+            _child = animator.transform.GetChild(0).gameObject;
+
         GetMousePos();
     }
 
@@ -18,7 +23,7 @@ public class FleeBehavior : StateMachineBehaviour
     {
         GetMousePos();
 
-        if (Vector3.Distance(animator.transform.position, mousePos) < distThreshold)
+        if (Vector3.Distance(_child.transform.position, mousePos) < distThreshold)
         {
             Flee(animator);
         }
@@ -30,7 +35,7 @@ public class FleeBehavior : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        _child.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
@@ -53,14 +58,14 @@ public class FleeBehavior : StateMachineBehaviour
 
     void Flee(Animator animator)
     {
-        Vector2 direction = new Vector2(animator.transform.position.x - mousePos.x, animator.transform.position.y - mousePos.y);
+        Vector2 direction = new Vector2(_child.transform.position.x - mousePos.x, _child.transform.position.y - mousePos.y);
 
         float clampX = direction.x;
         float clampY = direction.y;
         clampX = Mathf.Clamp(clampX, -1f, 1f);
         clampY = Mathf.Clamp(clampY, -1f, 1f);
 
-        Rigidbody2D rb = animator.gameObject.GetComponent<Rigidbody2D>();
+        Rigidbody2D rb = _child.GetComponent<Rigidbody2D>();
 
         rb.AddForce(((direction * moveSpeed) - rb.velocity) * Time.deltaTime, ForceMode2D.Impulse);
     }

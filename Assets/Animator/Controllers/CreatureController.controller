@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currDestination: {x: 0, y: 0}
-  moveSpeed: 10
+  moveSpeed: 1
   xRange: 10
   yRange: 10
   distThreshold: 5
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distThreshold: 5
-  moveSpeed: 10
+  moveSpeed: 5
   mousePos: {x: 0, y: 0}
 --- !u!1102 &6776952933300681610
 AnimatorState:
@@ -158,7 +158,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 5ea027fd5ef53d84db68547f2c75cf70, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

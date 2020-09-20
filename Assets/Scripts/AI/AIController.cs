@@ -5,8 +5,7 @@ using UnityEngine;
 public class AIController : MonoBehaviour
 {
     // Dependecies
-    public Rigidbody2D _rb;
-    public Animator _animator;
+    public GameObject _creature = null;
 
     public bool colStatus = false;
 

@@ -14,9 +14,19 @@ public class IdleBehavior : StateMachineBehaviour
     [ReadOnly] public Vector2 mousePos = Vector2.zero;
 
     // PRIVATE VARS
+    private GameObject _child = null;
+    private AIController _aic = null;
+    private Rigidbody2D _crb = null;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (_child == null)
+           _child = animator.transform.GetChild(0).gameObject;
+        if (_aic == null)
+            _aic = animator.transform.gameObject.GetComponent<AIController>();
+        if (_crb == null)
+            _crb = _child.GetComponent<Rigidbody2D>();
+        
        FindNewDestination(animator);
        GetMousePos();
     }
@@ -25,21 +35,29 @@ public class IdleBehavior : StateMachineBehaviour
     {
         GetMousePos();
 
-        if (Vector3.Distance(animator.transform.position, mousePos) < distThreshold)
+        if (Vector3.Distance(_child.transform.position, mousePos) < distThreshold)
         {
             animator.SetBool("mouseClose", true);
         }
 
-        bool status = animator.transform.gameObject.GetComponent<AIController>().colStatus;
-        if (Vector3.Distance(animator.transform.position, currDestination) < 0.4f || status)
+        if (Vector3.Distance(_child.transform.position, currDestination) < 1f || _aic.colStatus)
         {
             FindNewDestination(animator);
             animator.transform.gameObject.GetComponent<AIController>().colStatus = false;
         }
         else
         {
-            Vector3 position = Vector3.MoveTowards(animator.transform.position, currDestination, moveSpeed * Time.deltaTime);
-            animator.transform.gameObject.GetComponent<Rigidbody2D>().MovePosition(position);
+            // Vector3 pos = Vector3.MoveTowards(_child.transform.position, currDestination, moveSpeed * Time.deltaTime);
+            // _crb.MovePosition(pos);
+
+            Vector2 direction = new Vector2(_child.transform.position.x - currDestination.x, _child.transform.position.y - currDestination.y);
+            
+            float clampX = direction.x;
+            float clampY = direction.y;
+            clampX = Mathf.Clamp(clampX, -1f, 1f);
+            clampY = Mathf.Clamp(clampY, -1f, 1f);
+
+            _crb.AddForce(((direction * moveSpeed * -1f) - _crb.velocity) * Time.deltaTime, ForceMode2D.Impulse);
         }
     }
 
@@ -63,10 +81,9 @@ public class IdleBehavior : StateMachineBehaviour
     // Bounds: y -> (-0.5, -7.5), x -> (-1.5, -15.5)
     private void FindNewDestination(Animator animator)
     {
-        Transform anim_t = animator.transform;
         Vector3 randomOffset = new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange));
 
-        currDestination = anim_t.position + randomOffset;
+        currDestination = _child.transform.position + randomOffset;
         float clampX = currDestination.x;
         float clampY = currDestination.y;
         clampX = Mathf.Clamp(clampX, -15.5f, -1.5f);
