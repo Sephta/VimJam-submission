@@ -9,6 +9,8 @@ public class FleeBehavior : StateMachineBehaviour
 
     [ReadOnly] public Vector2 mousePos = Vector2.zero;
 
+    [SerializeField, ReadOnly] private Vector2 direction = Vector2.zero;
+
     private GameObject _child = null;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -22,6 +24,11 @@ public class FleeBehavior : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         GetMousePos();
+
+        if (direction.x >= 0)
+            _child.GetComponent<SpriteRenderer>().flipX = false;
+        else
+            _child.GetComponent<SpriteRenderer>().flipX = true;
 
         if (Vector3.Distance(_child.transform.position, mousePos) < distThreshold)
         {
@@ -58,12 +65,12 @@ public class FleeBehavior : StateMachineBehaviour
 
     void Flee(Animator animator)
     {
-        Vector2 direction = new Vector2(_child.transform.position.x - mousePos.x, _child.transform.position.y - mousePos.y);
-
-        float clampX = direction.x;
-        float clampY = direction.y;
+        float clampX = _child.transform.position.x - mousePos.x;
+        float clampY = _child.transform.position.y - mousePos.y;
         clampX = Mathf.Clamp(clampX, -1f, 1f);
         clampY = Mathf.Clamp(clampY, -1f, 1f);
+
+        direction = new Vector2(clampX, clampY);
 
         Rigidbody2D rb = _child.GetComponent<Rigidbody2D>();
 

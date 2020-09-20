@@ -38,11 +38,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currDestination: {x: 0, y: 0}
-  moveSpeed: 1
+  moveSpeed: 2
   xRange: 10
   yRange: 10
   distThreshold: 5
   mousePos: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
 --- !u!1107 &-1127749744351221234
 AnimatorStateMachine:
   serializedVersion: 5
@@ -134,8 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distThreshold: 5
-  moveSpeed: 5
+  moveSpeed: 10
   mousePos: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
 --- !u!1102 &6776952933300681610
 AnimatorState:
   serializedVersion: 5

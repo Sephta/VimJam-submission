@@ -13,11 +13,21 @@ public class AIController : MonoBehaviour
     // void Update() {}
     // void FixedUpdate() {}
 
-    void OnCollisionStay2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "Creature")
-        {
-            colStatus = true;
-        }
-    }
+    // void OnCollisionEnter2D(Collision2D col)
+    // {
+    //     if (col.gameObject.tag == "Creature")
+    //     {
+    //         colStatus = true;
+    //         Debug.Log("this is working. 1");
+    //     }
+    // }
+
+    // void OnCollisionStay2D(Collision2D col)
+    // {
+    //     if (col.gameObject.tag == "Creature")
+    //     {
+    //         colStatus = true;
+    //         Debug.Log("this is working. 2");
+    //     }
+    // }
 }

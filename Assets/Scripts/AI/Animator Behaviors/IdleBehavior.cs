@@ -14,6 +14,8 @@ public class IdleBehavior : StateMachineBehaviour
     [ReadOnly] public Vector2 mousePos = Vector2.zero;
 
     // PRIVATE VARS
+    [SerializeField, ReadOnly] private Vector2 direction = Vector2.zero;
+
     private GameObject _child = null;
     private AIController _aic = null;
     private Rigidbody2D _crb = null;
@@ -33,7 +35,13 @@ public class IdleBehavior : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+
         GetMousePos();
+
+        if (direction.x >= 0)
+            _child.GetComponent<SpriteRenderer>().flipX = true;
+        else
+            _child.GetComponent<SpriteRenderer>().flipX = false;
 
         if (Vector3.Distance(_child.transform.position, mousePos) < distThreshold)
         {
@@ -47,15 +55,12 @@ public class IdleBehavior : StateMachineBehaviour
         }
         else
         {
-            // Vector3 pos = Vector3.MoveTowards(_child.transform.position, currDestination, moveSpeed * Time.deltaTime);
-            // _crb.MovePosition(pos);
-
-            Vector2 direction = new Vector2(_child.transform.position.x - currDestination.x, _child.transform.position.y - currDestination.y);
-            
-            float clampX = direction.x;
-            float clampY = direction.y;
+            float clampX = _child.transform.position.x - currDestination.x;
+            float clampY = _child.transform.position.y - currDestination.y;
             clampX = Mathf.Clamp(clampX, -1f, 1f);
             clampY = Mathf.Clamp(clampY, -1f, 1f);
+
+            direction = new Vector2(clampX, clampY);
 
             _crb.AddForce(((direction * moveSpeed * -1f) - _crb.velocity) * Time.deltaTime, ForceMode2D.Impulse);
         }
@@ -78,21 +83,58 @@ public class IdleBehavior : StateMachineBehaviour
     //}
 
 
+    private Vector2 CalculateDirection(Vector2 destination)
+    {
+        float clampX = _child.transform.position.x - destination.x;
+        float clampY = _child.transform.position.y - destination.y;
+        clampX = Mathf.Clamp(clampX, -1f, 1f);
+        clampY = Mathf.Clamp(clampY, -1f, 1f);
+
+        Vector2 result = new Vector2(clampX, clampY);
+
+        return result;
+    }
+
     // Bounds: y -> (-0.5, -7.5), x -> (-1.5, -15.5)
     private void FindNewDestination(Animator animator)
     {
         Vector3 randomOffset = new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange));
 
-        currDestination = _child.transform.position + randomOffset;
-        float clampX = currDestination.x;
-        float clampY = currDestination.y;
+        Vector2 newDestination = new Vector2(_child.transform.position.y + randomOffset.x, _child.transform.position.y + randomOffset.y);
+        float clampX = newDestination.x;
+        float clampY = newDestination.y;
         clampX = Mathf.Clamp(clampX, -15.5f, -1.5f);
         clampY = Mathf.Clamp(clampY, -7.5f, -0.5f);
+
+        // Vector2 testDirection = CalculateDirection(newDestination);
+
+        // if (CheckNewDestination(testDirection, clampX, clampY))
+        //     return;
+        // else
+        //     currDestination = new Vector3(clampX, clampY, 0f);
 
         currDestination = new Vector3(clampX, clampY, 0f);
     }
 
-    void GetMousePos()
+    // private bool CheckNewDestination(Vector2 dir, float newX, float newY)
+    // {
+    //     float dist = Vector2.Distance(_child.transform.position, new Vector2(newX, newY));
+
+    //     RaycastHit2D[] hits = Physics2D.BoxCastAll(_child.transform.position, new Vector2(1f, 1f), 0f, dir, dist);
+
+    //     foreach (RaycastHit2D hit in hits)
+    //     {
+    //         if (hit.collider.gameObject.tag == "Creature")
+    //         {
+    //             Debug.Log(hit.collider.gameObject.name);
+    //             return true;
+    //         }
+    //     }
+
+    //     return false;
+    // }
+
+    private void GetMousePos()
     {
         Vector3 getMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos = new Vector2(getMouse.x, getMouse.y);
