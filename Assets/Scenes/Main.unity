@@ -1675,6 +1675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Creature Container (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 942779617726275611, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 942779617726275612, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2718,6 +2722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Creature Container (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 942779617726275611, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 942779617726275612, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2974,6 +2982,10 @@ PrefabInstance:
     - target: {fileID: 942779617726275611, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
       propertyPath: m_Name
       value: Creature Container (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 942779617726275611, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 942779617726275612, guid: 45d4b262aa4c656419aef5d002dd9b1b, type: 3}
       propertyPath: m_LocalPosition.x
