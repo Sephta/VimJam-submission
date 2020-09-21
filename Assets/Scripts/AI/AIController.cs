@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
+    public int _creatureID = 0;
     public CreatureData _creatureData = null;
-    [SerializeField] public List<int> SceneBounds = new List<int>(new int[4]);
+    [SerializeField] public List<float> SceneBounds = new List<float>(new float[4]);
     public SpriteRenderer _renderer = null;
     public bool colStatus = false;
 

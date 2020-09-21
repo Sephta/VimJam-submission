@@ -12,12 +12,17 @@ public class DragDropCreature : MonoBehaviour
     public bool isHeld = false;
 
     // PRIVATE VARS
+    private PlayerData _pData = null;
     private GameObject _imageRef = null;
     private Vector3 mousePos = Vector3.zero;
 
 
     // void Awake() {}
-    // void Start() {}
+    void Start()
+    {
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+    }
 
     void Update()
     {
@@ -34,6 +39,7 @@ public class DragDropCreature : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isHeld = true;
+            _pData.isHolding = true;
             _renderer.enabled = false;
             
             if (_cImage != null)
@@ -42,6 +48,8 @@ public class DragDropCreature : MonoBehaviour
                 Transform child = _imageRef.transform.GetChild(0);
                 child.gameObject.GetComponent<Image>().sprite = _cData.CreatureImage;
             }
+
+            _pData._currCreature = _cData;
 
             if (_renderer != null)
             {
@@ -54,6 +62,7 @@ public class DragDropCreature : MonoBehaviour
     void OnMouseUp()
     {
         isHeld = false;
+        _pData.isHolding = false;
         _renderer.enabled = true;
 
         if (_imageRef != null)
@@ -61,6 +70,8 @@ public class DragDropCreature : MonoBehaviour
             Destroy(_imageRef);
             _imageRef = null;
         }
+
+        // GameObject.Find("PlayerMaster").GetComponent<PlayerData>()._currCreature = null;
 
         if (_renderer != null)
         {
