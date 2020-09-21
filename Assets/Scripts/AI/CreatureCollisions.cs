@@ -12,7 +12,6 @@ public class CreatureCollisions : MonoBehaviour
         {
             if (aic != null)
                 aic.colStatus = true;
-            Debug.Log("this is working. 2");
         }
     }
 }

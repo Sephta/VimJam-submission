@@ -4,30 +4,19 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
-    // Dependecies
-    public GameObject _creature = null;
-
+    public CreatureData _creatureData = null;
+    public SpriteRenderer _renderer = null;
     public bool colStatus = false;
 
-    // void Start() {}
-    // void Update() {}
-    // void FixedUpdate() {}
+    void Awake()
+    {
+        if (_creatureData == null)
+            Debug.Log("Warning. reference to '_creatureData' on" + gameObject.name + " is null.");
+    }
 
-    // void OnCollisionEnter2D(Collision2D col)
-    // {
-    //     if (col.gameObject.tag == "Creature")
-    //     {
-    //         colStatus = true;
-    //         Debug.Log("this is working. 1");
-    //     }
-    // }
-
-    // void OnCollisionStay2D(Collision2D col)
-    // {
-    //     if (col.gameObject.tag == "Creature")
-    //     {
-    //         colStatus = true;
-    //         Debug.Log("this is working. 2");
-    //     }
-    // }
+    void Start()
+    {
+        if (_creatureData != null && _renderer != null)
+            _renderer.sprite = _creatureData.CreatureImage;
+    }
 }
