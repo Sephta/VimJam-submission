@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c8339b95855f37428fb5fcadc731262, type: 3}
-  m_Name: Test Creature
+  m_Name: Test Creature B
   m_EditorClassIdentifier: 
-  _creatureName: Chicken
-  _creatureImage: {fileID: 7451382315982878323, guid: cb75985416eb4ba4ca4533ed6e03aab2, type: 3}
+  _creatureName: Creature(B)
+  _creatureID: 0
+  _creatureImage: {fileID: -8039043525712077593, guid: cb75985416eb4ba4ca4533ed6e03aab2, type: 3}

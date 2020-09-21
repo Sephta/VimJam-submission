@@ -5071,6 +5071,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slot B Image
       objectReference: {fileID: 0}
+    - target: {fileID: 8778035125411562299, guid: 0d584fd1995dbff4eb02a46e1e585058, type: 3}
+      propertyPath: _pData
+      value: 
+      objectReference: {fileID: 809451908}
+    - target: {fileID: 8778035125411562299, guid: 0d584fd1995dbff4eb02a46e1e585058, type: 3}
+      propertyPath: _cMaster
+      value: 
+      objectReference: {fileID: 1792156524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d584fd1995dbff4eb02a46e1e585058, type: 3}
 --- !u!1001 &8075578304997531703

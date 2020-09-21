@@ -39,9 +39,14 @@ public class DropHandler : MonoBehaviour
             if (result.gameObject.name == "Slot A" || result.gameObject.name == "Slot B")
             {
                 PlayerData _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
-                if (_pData._currCreature != null)
-                    result.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = _pData._currCreature.CreatureImage;
+                if (_pData._currCreature != null && _pData._currCreatureData != null)
+                {
+                    SlotData sd = result.gameObject.GetComponent<SlotData>();
+                    sd._cData = _pData._currCreature;
+                    result.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = _pData._currCreatureData.CreatureImage;
+                }
                 _pData._currCreature = null;
+                _pData._currCreatureData = null;
             }
         }
     }

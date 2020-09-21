@@ -15,10 +15,9 @@ public class PlayerData : MonoBehaviour
     [SerializeField] public List<int> _creatureAmount = new List<int>();
 
     [Header("Drag and Drop Data")]
-    [ReadOnly] public CreatureData _currCreature = null;
+    [ReadOnly] public CreatureData _currCreatureData = null;
+    [ReadOnly] public GameObject _currCreature = null;
     public bool isHolding = false;
-
-    public CreatureData testData = null;
 
 
     // PRIVATE VARS
@@ -34,7 +33,10 @@ public class PlayerData : MonoBehaviour
     void Update()
     {
         if (!isHolding)
+        {
+            _currCreatureData = null;
             _currCreature = null;
+        }
     }
 
     // void FixedUpdate() {}

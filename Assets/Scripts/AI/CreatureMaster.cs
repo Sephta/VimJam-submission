@@ -83,7 +83,6 @@ public class CreatureMaster : MonoBehaviour
 
                     refr.name = "Creature - " + _aic._creatureID.ToString();
                     _creatures.Add(refr);
-                    // refr.SetActive(false);
                 }
             }
         }

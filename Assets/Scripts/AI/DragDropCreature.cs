@@ -45,11 +45,14 @@ public class DragDropCreature : MonoBehaviour
             if (_cImage != null)
             {
                 _imageRef = Instantiate(_cImage, new Vector3(mousePos.x, mousePos.y, 0f), Quaternion.identity);
+                _imageRef.name = "Held Creature";
+                _imageRef.transform.SetParent(GameObject.Find("------------------- UI ------------------").transform);
                 Transform child = _imageRef.transform.GetChild(0);
                 child.gameObject.GetComponent<Image>().sprite = _cData.CreatureImage;
             }
 
-            _pData._currCreature = _cData;
+            _pData._currCreature = transform.parent.gameObject;
+            _pData._currCreatureData = _cData;
 
             if (_renderer != null)
             {
