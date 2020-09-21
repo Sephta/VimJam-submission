@@ -5,6 +5,7 @@ using UnityEngine;
 public class AIController : MonoBehaviour
 {
     public CreatureData _creatureData = null;
+    [SerializeField] public List<int> SceneBounds = new List<int>(new int[4]);
     public SpriteRenderer _renderer = null;
     public bool colStatus = false;
 

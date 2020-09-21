@@ -103,8 +103,8 @@ public class IdleBehavior : StateMachineBehaviour
         Vector2 newDestination = new Vector2(_child.transform.position.y + randomOffset.x, _child.transform.position.y + randomOffset.y);
         float clampX = newDestination.x;
         float clampY = newDestination.y;
-        clampX = Mathf.Clamp(clampX, -15.5f, -1.5f);
-        clampY = Mathf.Clamp(clampY, -7.5f, -0.5f);
+        clampX = Mathf.Clamp(clampX, _aic.SceneBounds[3], _aic.SceneBounds[1]);
+        clampY = Mathf.Clamp(clampY, _aic.SceneBounds[0], _aic.SceneBounds[2]);
 
         // Vector2 testDirection = CalculateDirection(newDestination);
 
