@@ -2055,9 +2055,9 @@ MonoBehaviour:
   _creatureType:
   - {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
   _creatureAmount: 05000000
+  _currCreatureData: {fileID: 0}
   _currCreature: {fileID: 0}
   isHolding: 0
-  testData: {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
 --- !u!1001 &814475263
 PrefabInstance:
   m_ObjectHideFlags: 0
