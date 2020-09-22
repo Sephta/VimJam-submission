@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creatureName: Creature(A)
   _creatureID: 0
-  _creatureImage: {fileID: 7451382315982878323, guid: cb75985416eb4ba4ca4533ed6e03aab2, type: 3}
+  _creatureImage: {fileID: 1913543167974458854, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
