@@ -8,11 +8,8 @@ public class PlayerData : MonoBehaviour
     [Header("Dependencies")]
     public GameObject _cContainer = null;
 
-    [Header("Player Data")]
-    // [SerializeField, ReadOnly] public List<GameObject> _inventory = new List<GameObject>();
-
-    [SerializeField] public List<CreatureData> _creatureType = new List<CreatureData>();
-    [SerializeField] public List<int> _creatureAmount = new List<int>();
+    [Header("Player Inv")]
+    public PlayerInventory _pi = null;
 
     [Header("Drag and Drop Data")]
     [ReadOnly] public CreatureData _currCreatureData = null;
@@ -22,8 +19,15 @@ public class PlayerData : MonoBehaviour
 
     // PRIVATE VARS
 
+
     void Awake() 
     {
+
+        if (GameObject.Find("PlayerInv") != null)
+        {
+            _pi = GameObject.Find("PlayerInv").GetComponent<PlayerInventory>();
+        }
+
         if (_cContainer == null)
             Debug.Log("Warning. reference to CreatureContainer in PlayerData is null.");
     }
@@ -37,28 +41,44 @@ public class PlayerData : MonoBehaviour
             _currCreatureData = null;
             _currCreature = null;
         }
+        CheckInv();
     }
 
     // void FixedUpdate() {}
 
     public void AddCreature(CreatureData newCreature)
     {
-        if (_creatureType.Contains(newCreature))
-            _creatureAmount[_creatureType.IndexOf(newCreature)]++;
+        if (_pi._creatureType.Contains(newCreature))
+            _pi._creatureAmount[_pi._creatureType.IndexOf(newCreature)]++;
         else
-            _creatureType.Add(newCreature);
+        {
+            _pi._creatureType.Add(newCreature);
+            _pi._creatureAmount.Add(1);
+        }
     }
 
     public void RemoveCreature(CreatureData toRemove)
     {
-        if (_creatureType.Contains(toRemove))
+        if (_pi._creatureType.Contains(toRemove))
         {
-            _creatureAmount[_creatureType.IndexOf(toRemove)]--;
+            _pi._creatureAmount[_pi._creatureType.IndexOf(toRemove)]--;
         }
         else
         {
             Debug.Log("Creature not contined in player inv. ??? Idk if this is possible or not");
             return;
+        }
+    }
+
+    private void CheckInv()
+    {
+        for (int i = 0; i < _pi._creatureAmount.Count; i++)
+        {
+            if (_pi._creatureAmount[i] == 0)
+            {
+                _pi._creatureAmount.RemoveAt(i);
+                _pi._creatureType.RemoveAt(i);
+            }
         }
     }
 }

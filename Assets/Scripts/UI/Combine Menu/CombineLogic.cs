@@ -20,6 +20,9 @@ public class CombineLogic : MonoBehaviour
 
     void Awake()
     {
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+
         if (slotA == null || slotB == null)
             Debug.Log("Warning. SlotData in CombineLogic is null or missing.");
     }

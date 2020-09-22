@@ -60,9 +60,9 @@ public class CreatureMaster : MonoBehaviour
 
         if (_pData != null)
         {
-            foreach (CreatureData creature in _pData._creatureType)
+            foreach (CreatureData creature in _pData._pi._creatureType)
             {
-                for (int i = 0; i < _pData._creatureAmount[_pData._creatureType.IndexOf(creature)]; i++)
+                for (int i = 0; i < _pData._pi._creatureAmount[_pData._pi._creatureType.IndexOf(creature)]; i++)
                 {
                     refr = Instantiate(_cContainer, Vector3.zero, Quaternion.identity, transform);
 

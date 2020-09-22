@@ -17,7 +17,12 @@ public class DragDropCreature : MonoBehaviour
     private Vector3 mousePos = Vector3.zero;
 
 
-    // void Awake() {}
+    void Awake()
+    {
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+    }
+
     void Start()
     {
         if (GameObject.Find("PlayerMaster") != null)

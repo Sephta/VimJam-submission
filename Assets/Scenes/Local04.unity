@@ -229,6 +229,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 798014133}
     m_Modifications:
+    - target: {fileID: 1448609876540424832, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
+      propertyPath: loadSceneIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448609876540424832, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
+      propertyPath: unloadSceneIndex
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4716052219017823904, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
       propertyPath: m_Name
       value: Top Menu Bar

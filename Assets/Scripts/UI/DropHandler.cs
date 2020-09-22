@@ -14,6 +14,13 @@ public class DropHandler : MonoBehaviour
 
     EventSystem es = null;
 
+
+    void Awake()
+    {
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+    }
+
     void Start()
     {
         if (GetComponent<GraphicRaycaster>() != null)
