@@ -49,8 +49,16 @@ public class PlayerData : MonoBehaviour
             _creatureType.Add(newCreature);
     }
 
-    public void RemoveCreature()
+    public void RemoveCreature(CreatureData toRemove)
     {
-        
+        if (_creatureType.Contains(toRemove))
+        {
+            _creatureAmount[_creatureType.IndexOf(toRemove)]--;
+        }
+        else
+        {
+            Debug.Log("Creature not contined in player inv. ??? Idk if this is possible or not");
+            return;
+        }
     }
 }

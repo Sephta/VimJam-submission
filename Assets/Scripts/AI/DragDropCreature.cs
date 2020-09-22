@@ -74,8 +74,6 @@ public class DragDropCreature : MonoBehaviour
             _imageRef = null;
         }
 
-        // GameObject.Find("PlayerMaster").GetComponent<PlayerData>()._currCreature = null;
-
         if (_renderer != null)
         {
             _renderer.sortingLayerName = "Creature";

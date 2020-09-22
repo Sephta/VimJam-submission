@@ -6,7 +6,11 @@ using UnityEngine.EventSystems;
 
 public class DropHandler : MonoBehaviour
 {
+    [Header("Dependencies")]
     public GraphicRaycaster _raycaster = null;
+    public CombineLogic _cl = null;
+    public PlayerData _pData = null;
+    public CreatureMaster _cMaster = null;
 
     EventSystem es = null;
 
@@ -42,7 +46,17 @@ public class DropHandler : MonoBehaviour
                 if (_pData._currCreature != null && _pData._currCreatureData != null)
                 {
                     SlotData sd = result.gameObject.GetComponent<SlotData>();
-                    sd._cData = _pData._currCreature;
+                    if (sd._slotCreature == null)
+                    {
+                        sd._slotCreature = _pData._currCreature;
+                        if (result.gameObject.name == "Slot A")
+                            _cl.ToCombine[0] = _pData._currCreature;
+                        else
+                            _cl.ToCombine[1] = _pData._currCreature;
+                        
+                        _pData._currCreature.transform.GetChild(0).position = new Vector3(10000f, 0f, 0f);
+                        _cMaster._creatures.Remove(_pData._currCreature);
+                    }
                     result.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = _pData._currCreatureData.CreatureImage;
                 }
                 _pData._currCreature = null;

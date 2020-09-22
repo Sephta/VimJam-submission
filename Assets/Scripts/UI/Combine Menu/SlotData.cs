@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class SlotData : MonoBehaviour
 {
-    [ReadOnly] public GameObject _cData = null;
+    [ReadOnly] public GameObject _slotCreature = null;
 }

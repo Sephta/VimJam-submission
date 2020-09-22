@@ -12,6 +12,7 @@ public class CreatureMaster : MonoBehaviour
     public CM_Mode _type;
     [SerializeField] public List<GameObject> _creatures = new List<GameObject>();
     [SerializeField] public List<float> SceneBounds = new List<float>(new float[4]);
+    [ReadOnly] public int currCreatureID = 0;
 
     [Header("Player Data")]
     public PlayerData _pData = null;
@@ -24,7 +25,6 @@ public class CreatureMaster : MonoBehaviour
 
     // PRIVATE VARS
     private GameObject refr = null;
-    private int currCreatureID = 0;
 
 
     void Awake()
@@ -64,7 +64,6 @@ public class CreatureMaster : MonoBehaviour
             {
                 for (int i = 0; i < _pData._creatureAmount[_pData._creatureType.IndexOf(creature)]; i++)
                 {
-                    Vector3 spawnPos = FindRandomPos(SceneBounds);
                     refr = Instantiate(_cContainer, Vector3.zero, Quaternion.identity, transform);
 
                     AIController _aic = refr.GetComponent<AIController>();
@@ -75,9 +74,8 @@ public class CreatureMaster : MonoBehaviour
                     _aic._creatureData = creature;
                     _aic.SceneBounds = this.SceneBounds;
                     currCreatureID++;
-                    _aic.SetCreatureImage();
 
-                    _child.transform.position = spawnPos;
+                    _child.transform.position = FindRandomPos(SceneBounds);
                     _child.GetComponent<SpriteRenderer>().sprite = creature.CreatureImage;
 
                     _ddc._cData = creature;
@@ -89,7 +87,7 @@ public class CreatureMaster : MonoBehaviour
         }
     }
 
-    private Vector3 FindRandomPos(List<float> bounds)
+    public Vector3 FindRandomPos(List<float> bounds)
     {
         Vector3 result = Vector3.zero;
 
