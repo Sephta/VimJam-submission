@@ -388,6 +388,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 491959593}
     m_Modifications:
+    - target: {fileID: 259116165, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1448609876540424832, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
       propertyPath: loadSceneIndex
       value: 1
@@ -450,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4716052219017823905, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 424.79
+      value: 425.08
       objectReference: {fileID: 0}
     - target: {fileID: 4716052219017823905, guid: b7e9ae320f80c1e41a68ac795faaae7f, type: 3}
       propertyPath: m_SizeDelta.x

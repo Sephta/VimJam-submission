@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CreatureDataAsset", menuName = "CreatureData Asset", order = 1)]
+[CreateAssetMenu(fileName = "CreatureDataAsset", menuName = "ScriptableObjects/CreatureData Asset", order = 1)]
 public class CreatureData : ScriptableObject
 {
     // PRIVATE DATA

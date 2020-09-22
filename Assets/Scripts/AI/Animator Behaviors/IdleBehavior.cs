@@ -48,7 +48,7 @@ public class IdleBehavior : StateMachineBehaviour
             animator.SetBool("mouseClose", true);
         }
 
-        if (Vector3.Distance(_child.transform.position, currDestination) < 1f || _aic.colStatus)
+        if (Vector3.Distance(_child.transform.position, currDestination) < 2f || _aic.colStatus)
         {
             FindNewDestination(animator);
             animator.transform.gameObject.GetComponent<AIController>().colStatus = false;
@@ -106,33 +106,8 @@ public class IdleBehavior : StateMachineBehaviour
         clampX = Mathf.Clamp(clampX, _aic.SceneBounds[3], _aic.SceneBounds[1]);
         clampY = Mathf.Clamp(clampY, _aic.SceneBounds[0], _aic.SceneBounds[2]);
 
-        // Vector2 testDirection = CalculateDirection(newDestination);
-
-        // if (CheckNewDestination(testDirection, clampX, clampY))
-        //     return;
-        // else
-        //     currDestination = new Vector3(clampX, clampY, 0f);
-
         currDestination = new Vector3(clampX, clampY, 0f);
     }
-
-    // private bool CheckNewDestination(Vector2 dir, float newX, float newY)
-    // {
-    //     float dist = Vector2.Distance(_child.transform.position, new Vector2(newX, newY));
-
-    //     RaycastHit2D[] hits = Physics2D.BoxCastAll(_child.transform.position, new Vector2(1f, 1f), 0f, dir, dist);
-
-    //     foreach (RaycastHit2D hit in hits)
-    //     {
-    //         if (hit.collider.gameObject.tag == "Creature")
-    //         {
-    //             Debug.Log(hit.collider.gameObject.name);
-    //             return true;
-    //         }
-    //     }
-
-    //     return false;
-    // }
 
     private void GetMousePos()
     {

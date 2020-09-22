@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currDestination: {x: 0, y: 0}
-  moveSpeed: 2
+  moveSpeed: 3
   xRange: 10
   yRange: 10
   distThreshold: 5

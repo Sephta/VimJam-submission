@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "EvolutionAsset", menuName = "Evolution Asset", order = 3), SerializeField]
+[CreateAssetMenu(fileName = "EvolutionAsset", menuName = "ScriptableObjects/Evolution Asset", order = 3), SerializeField]
 public class Evolution : ScriptableObject
 {
     public CreatureData Creature01 = null;

@@ -8,11 +8,21 @@ public class CreatureMaster : MonoBehaviour
     [Header("Dependencies")]
     public GameObject _cContainer = null;
 
-    [Header("Area Spawn Params")]
+    [Header("Main Menu Spawn Params")]
     public CM_Mode _type;
     [SerializeField] public List<GameObject> _creatures = new List<GameObject>();
     [SerializeField] public List<float> SceneBounds = new List<float>(new float[4]);
     [ReadOnly] public int currCreatureID = 0;
+
+    [Header("Local Spawn Params")]
+    public int spawnLimit = 0;
+    [SerializeField] public List<int> weightedTable = new List<int>();
+    [SerializeField] public List<RarityTier> tiers = new List<RarityTier>();
+
+    [Header("Spawn Lists")]
+    [SerializeField] public List<CreatureData> commonSpawns = new List<CreatureData>();
+    [SerializeField] public List<CreatureData> uncommonSpawns = new List<CreatureData>();
+    [SerializeField] public List<CreatureData> rareSpawns = new List<CreatureData>();
 
     [Header("Player Data")]
     public PlayerData _pData = null;
@@ -21,6 +31,13 @@ public class CreatureMaster : MonoBehaviour
     {
         main = 0,
         local = 1
+    }
+
+    public enum RarityTier
+    {
+        common = 0,
+        uncommon = 1,
+        rare = 2
     }
 
     // PRIVATE VARS
@@ -42,6 +59,7 @@ public class CreatureMaster : MonoBehaviour
                 break;
 
             case CM_Mode.local:
+                CalculateAreaSpawns();
                 break;
         }
     }
@@ -51,7 +69,75 @@ public class CreatureMaster : MonoBehaviour
         CheckCreatureBounds();
     }
 
-    // void FixedUpdate() {}
+    private void CalculateAreaSpawns()
+    {
+        Debug.Log("Creatures should be spawning...");
+
+        for (int i = 0; i < spawnLimit; i++)
+        {
+            switch (WeightedProb(tiers, weightedTable))
+            {
+                case (int)RarityTier.common:
+                    SpawnCreature(commonSpawns[Random.Range(0, commonSpawns.Count)]);
+                    break;
+                case (int)RarityTier.uncommon:
+                    SpawnCreature(uncommonSpawns[Random.Range(0, uncommonSpawns.Count)]);
+                    break;
+                case (int)RarityTier.rare:
+                    SpawnCreature(rareSpawns[Random.Range(0, rareSpawns.Count)]);
+                    break;
+            }
+        }
+    }
+
+    /* https://www.youtube.com/watch?v=Nu-HEbb_z54&t=283s
+     * Code written bellow heavily inspired by the above link to
+     * Wintermute Digital's Youtube channel
+    */
+    private int WeightedProb(List<RarityTier> tiers, List<int> weights)
+    {
+        int result = 0;
+
+        float totalWeight = 0;
+        foreach (int w in weights)
+            totalWeight += w;
+        
+        float p = Random.Range(0, totalWeight);
+
+        float runningTotal = 0;
+        for (int i = 0; i < weights.Count; i++)
+        {
+            runningTotal += weights[i];
+            if (runningTotal > p)
+                return (int)tiers[i];
+        }
+
+        return result;
+    }
+
+    private void SpawnCreature(CreatureData newCreature)
+    {
+        Debug.Log("Spawned: " + newCreature.CreatureName);
+
+        refr = Instantiate(_cContainer, Vector3.zero, Quaternion.identity, transform);
+
+        AIController _aic = refr.GetComponent<AIController>();
+        Transform _child = refr.transform.GetChild(0);
+        DragDropCreature _ddc = _child.GetComponent<DragDropCreature>();
+
+        _aic._creatureID = currCreatureID;
+        _aic._creatureData = newCreature;
+        _aic.SceneBounds = this.SceneBounds;
+        currCreatureID++;
+
+        _child.transform.position = FindRandomPos(SceneBounds);
+        _child.GetComponent<SpriteRenderer>().sprite = newCreature.CreatureImage;
+
+        _ddc._cData = newCreature;
+
+        refr.name = "Creature - " + _aic._creatureID.ToString();
+        _creatures.Add(refr);
+    }
 
     private void SpawnPlayerInventory()
     {
