@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
-    [ReadOnly] public int _creatureID = 0;
+    public int _creatureID = 0;
     public CreatureData _creatureData = null;
     [SerializeField] public List<float> SceneBounds = new List<float>(new float[4]);
     public SpriteRenderer _renderer = null;
@@ -12,11 +12,17 @@ public class AIController : MonoBehaviour
 
     void Awake()
     {
-        if (_creatureData == null)
-            Debug.Log("Warning. reference to '_creatureData' on" + gameObject.name + " is null.");
+        // if (_creatureData == null)
+        //     Debug.Log("Warning. reference to '_creatureData' on" + gameObject.name + " is null.");
     }
 
     void Start()
+    {
+        // if (_creatureData != null && _renderer != null)
+        //     _renderer.sprite = _creatureData.CreatureImage;
+    }
+
+    public void SetCreatureImage()
     {
         if (_creatureData != null && _renderer != null)
             _renderer.sprite = _creatureData.CreatureImage;

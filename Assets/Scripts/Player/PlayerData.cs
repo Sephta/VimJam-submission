@@ -49,5 +49,8 @@ public class PlayerData : MonoBehaviour
             _creatureType.Add(newCreature);
     }
 
-    public void RemoveCreature() {}
+    public void RemoveCreature()
+    {
+        
+    }
 }

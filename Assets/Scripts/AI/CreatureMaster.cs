@@ -67,18 +67,19 @@ public class CreatureMaster : MonoBehaviour
                     Vector3 spawnPos = FindRandomPos(SceneBounds);
                     refr = Instantiate(_cContainer, Vector3.zero, Quaternion.identity, transform);
 
-                    AIController _aic = _cContainer.GetComponent<AIController>();
-                    Transform _child = _cContainer.transform.GetChild(0);
+                    AIController _aic = refr.GetComponent<AIController>();
+                    Transform _child = refr.transform.GetChild(0);
                     DragDropCreature _ddc = _child.GetComponent<DragDropCreature>();
+
+                    _aic._creatureID = currCreatureID;
+                    _aic._creatureData = creature;
+                    _aic.SceneBounds = this.SceneBounds;
+                    currCreatureID++;
+                    _aic.SetCreatureImage();
 
                     _child.transform.position = spawnPos;
                     _child.GetComponent<SpriteRenderer>().sprite = creature.CreatureImage;
 
-                    _aic._creatureID = currCreatureID;
-                    currCreatureID++;
-
-                    _aic._creatureData = creature;
-                    _aic.SceneBounds = this.SceneBounds;
                     _ddc._cData = creature;
 
                     refr.name = "Creature - " + _aic._creatureID.ToString();
