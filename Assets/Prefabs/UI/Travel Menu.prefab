@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.07058824, g: 0.07058824, b: 0.07058824, a: 1}
+  m_Color: {r: 0.07058824, g: 0.07058824, b: 0.07058824, a: 0.9137255}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -172,6 +172,10 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8952067861255263791, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
     - target: {fileID: 8952067861933475260, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
       propertyPath: m_Name
       value: Location Button
@@ -317,6 +321,10 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8952067861255263791, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
     - target: {fileID: 8952067861933475260, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
       propertyPath: m_Name
       value: Location Button (2)
@@ -423,6 +431,10 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8952067861255263791, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
     - target: {fileID: 8952067861933475260, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
       propertyPath: m_Name
       value: Location Button (1)
@@ -529,6 +541,10 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8952067861255263791, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b6349d08a5335cd4aa534282435d11cc, type: 3}
     - target: {fileID: 8952067861933475260, guid: d4ec7d31c37b22d43a2e6419d580144d, type: 3}
       propertyPath: m_Name
       value: Location Button (3)

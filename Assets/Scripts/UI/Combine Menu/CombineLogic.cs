@@ -8,6 +8,7 @@ public class CombineLogic : MonoBehaviour
     [Header("Slots")]
     public SlotData slotA = null;
     public SlotData slotB = null;
+    public Sprite defaultSprite = null;
 
     [Header("Player + Creature Data")]
     public PlayerData _pData = null;
@@ -47,7 +48,10 @@ public class CombineLogic : MonoBehaviour
         if (slotA != null)
         {
             // Clear data from slotA
-            slotA.transform.GetChild(0).GetComponent<Image>().sprite = null;
+            if (defaultSprite != null)
+                slotA.transform.GetChild(0).GetComponent<Image>().sprite = defaultSprite;
+            else
+                slotA.transform.GetChild(0).GetComponent<Image>().sprite = null;
             slotA._slotCreature = null;
             Debug.Log("Slot A Cleared.");
         }
@@ -55,7 +59,11 @@ public class CombineLogic : MonoBehaviour
         if (slotB != null)
         {
             // Clear data from slotB
-            slotB.transform.GetChild(0).GetComponent<Image>().sprite = null;
+            if (defaultSprite != null)
+                slotB.transform.GetChild(0).GetComponent<Image>().sprite = defaultSprite;
+            else
+                slotB.transform.GetChild(0).GetComponent<Image>().sprite = null;
+
             slotB._slotCreature = null;
             Debug.Log("Slot B Cleared.");
         }
