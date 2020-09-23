@@ -14,6 +14,8 @@ public class PlayerData : MonoBehaviour
     [Header("Drag and Drop Data")]
     [ReadOnly] public CreatureData _currCreatureData = null;
     [ReadOnly] public GameObject _currCreature = null;
+    [ReadOnly] public ShopItemData _currItemData = null;
+    [ReadOnly] public GameObject _currItem = null;
     public bool isHolding = false;
 
 

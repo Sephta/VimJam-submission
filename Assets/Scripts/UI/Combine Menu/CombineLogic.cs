@@ -131,7 +131,7 @@ public class CombineLogic : MonoBehaviour
 
         _ddc._cData = newCreature;
 
-        refr.name = "Creature - " + _aic._creatureID.ToString();
+        refr.name = _aic._creatureData.CreatureName + " - " + _aic._creatureID.ToString();
         _cMaster._creatures.Add(refr);
     }
 }

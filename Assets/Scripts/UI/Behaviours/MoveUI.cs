@@ -14,11 +14,21 @@ public class MoveUI : MonoBehaviour
     public float desiredPosX = 0f;
     public float desiredPosY = 0f;
 
+    [Header("Settings")]
+    public UITweenSetting fadeOut = UITweenSetting.no;
+    public UITweenSetting destroyAfterCompletion = UITweenSetting.no;
+
     public enum PosType
     {
         posX,
         posY,
         both
+    }
+
+    public enum UITweenSetting
+    {
+        no = 0,
+        yes = 1,
     }
 
     void Awake()
@@ -38,19 +48,30 @@ public class MoveUI : MonoBehaviour
                     break;
 
                 case PosType.posY:
-                    LeanTween.moveY(objectToTween, desiredPosY, timeToTween).setEase(easeIn);
+                    if (destroyAfterCompletion == UITweenSetting.yes)
+                        LeanTween.moveY(objectToTween, desiredPosY, timeToTween).setEase(easeIn).setOnComplete(DestroySelf);
+                    else
+                        LeanTween.moveY(objectToTween, desiredPosY, timeToTween).setEase(easeIn);
                     break;
 
                 case PosType.both:
                     LeanTween.move(objectToTween, new Vector3(desiredPosX, desiredPosY, 0f), timeToTween);
                     break;
             }
+
+            if (fadeOut == UITweenSetting.yes)
+                LeanTween.alpha(this.gameObject, 0, timeToTween);
         }
     }
 
     void OnDisable() 
     {
 
+    }
+
+    public void DestroySelf()
+    {
+        Destroy(this.gameObject);
     }
 
     // void Start() {}

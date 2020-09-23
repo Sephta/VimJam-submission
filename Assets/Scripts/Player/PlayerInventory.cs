@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerInventory : MonoBehaviour
 {
     [Header("Player Data")]
+    public int _playerEXP = 0;
     [SerializeField] public List<CreatureData> _creatureType = new List<CreatureData>();
     [SerializeField] public List<int> _creatureAmount = new List<int>();
 

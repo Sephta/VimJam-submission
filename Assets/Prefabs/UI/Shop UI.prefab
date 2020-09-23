@@ -443,7 +443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dummy Text
+  m_Text: Item Shop
 --- !u!1 &4159202176757627516
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (3)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -919,7 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (4)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (2)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -1123,7 +1123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (1)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -1225,7 +1225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (2)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -1327,7 +1327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (1)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -1429,7 +1429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (3)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
@@ -1531,7 +1531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4461239514557729890, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}
       propertyPath: m_Name
-      value: Shop Item (4)
+      value: Shop Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81c90e7c206e85d499acc5e0f99d5308, type: 3}

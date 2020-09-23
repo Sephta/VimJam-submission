@@ -11,6 +11,7 @@ public class DropHandler : MonoBehaviour
     public CombineLogic _cl = null;
     public PlayerData _pData = null;
     public CreatureMaster _cMaster = null;
+    public GameObject _itemEntity = null;
 
     EventSystem es = null;
 
@@ -69,6 +70,22 @@ public class DropHandler : MonoBehaviour
                 _pData._currCreature = null;
                 _pData._currCreatureData = null;
             }
+
+            if (result.gameObject.name == "Shop Item")
+            {
+                SpawnItemInHand(result.gameObject);
+            }
+        }
+    }
+
+    private void SpawnItemInHand(GameObject itemSlot)
+    {
+        ShopItemData shopItem = itemSlot.GetComponent<ShopItemDataContainer>()._item;
+        if (shopItem != null && _itemEntity != null)
+        {
+            Debug.Log("Item Grabbed: " + shopItem.ItemName);
+            GameObject refr = Instantiate(_itemEntity, new Vector3(-15.5f, -0.61f , 0f), Quaternion.identity, _pData.transform);
+            refr.GetComponent<ItemEntityData>()._itemData = shopItem;
         }
     }
 }

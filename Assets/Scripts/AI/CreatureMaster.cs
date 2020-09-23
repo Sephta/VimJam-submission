@@ -71,7 +71,7 @@ public class CreatureMaster : MonoBehaviour
 
     private void CalculateAreaSpawns()
     {
-        Debug.Log("Creatures should be spawning...");
+        // Debug.Log("Creatures should be spawning...");
 
         for (int i = 0; i < spawnLimit; i++)
         {
@@ -117,8 +117,6 @@ public class CreatureMaster : MonoBehaviour
 
     private void SpawnCreature(CreatureData newCreature)
     {
-        Debug.Log("Spawned: " + newCreature.CreatureName);
-
         refr = Instantiate(_cContainer, Vector3.zero, Quaternion.identity, transform);
 
         AIController _aic = refr.GetComponent<AIController>();
@@ -135,8 +133,9 @@ public class CreatureMaster : MonoBehaviour
 
         _ddc._cData = newCreature;
 
-        refr.name = "Creature - " + _aic._creatureID.ToString();
+        refr.name = _aic._creatureData.CreatureName + " - " + _aic._creatureID.ToString();
         _creatures.Add(refr);
+        // Debug.Log("Spawned: " + newCreature.CreatureName + " - " + _aic._creatureID);
     }
 
     private void SpawnPlayerInventory()
@@ -166,7 +165,7 @@ public class CreatureMaster : MonoBehaviour
 
                     _ddc._cData = creature;
 
-                    refr.name = "Creature - " + _aic._creatureID.ToString();
+                    refr.name = _aic._creatureData.CreatureName + " - " + _aic._creatureID.ToString();
                     _creatures.Add(refr);
                 }
             }
