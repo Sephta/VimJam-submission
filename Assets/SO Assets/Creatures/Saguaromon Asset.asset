@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creatureName: Saguaromon
   _creatureID: 0
+  _soundIndexPickup: 10
+  _soundIndexDrop: 4
   _creatureImage: {fileID: -5106214369077804176, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+  _creatureEXP: 25

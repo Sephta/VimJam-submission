@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creatureName: Lagomorphomon
   _creatureID: 0
+  _soundIndexPickup: 15
+  _soundIndexDrop: 0
   _creatureImage: {fileID: 1173112000720570263, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+  _creatureEXP: 250

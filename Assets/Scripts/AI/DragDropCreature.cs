@@ -63,11 +63,19 @@ public class DragDropCreature : MonoBehaviour
                 _renderer.sortingLayerName = "UI";
                 _renderer.sortingOrder = 1;
             }
+
+            if (_pData._currCreatureData != null)
+                AudioManager._instance.PlaySound(_pData._currCreatureData.CreaturePickupSound);
+            else
+                Debug.Log("wat?");
         }
     }
 
     void OnMouseUp()
     {
+        // if (_pData._currCreatureData != null)
+        //     AudioManager._instance.PlaySound(_pData._currCreatureData.CreatureDropSound);
+
         isHeld = false;
         // _pData.isHolding = false;
         _renderer.enabled = true;

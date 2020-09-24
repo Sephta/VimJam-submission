@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creatureName: Brahmon
   _creatureID: 0
+  _soundIndexPickup: 13
+  _soundIndexDrop: 0
   _creatureImage: {fileID: 5564405780835860219, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+  _creatureEXP: 1000

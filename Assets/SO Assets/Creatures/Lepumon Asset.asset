@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creatureName: Lepumon
   _creatureID: 0
+  _soundIndexPickup: 11
+  _soundIndexDrop: 0
   _creatureImage: {fileID: -1091741334894721673, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+  _creatureEXP: 15

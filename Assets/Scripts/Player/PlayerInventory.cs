@@ -25,7 +25,7 @@ public class PlayerInventory : MonoBehaviour
         if (!gameStart)
         {
             _instance = this;
-            SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
             gameStart = true;
         }
     }

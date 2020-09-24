@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creatureName: Tundramon
   _creatureID: 0
+  _soundIndexPickup: 20
+  _soundIndexDrop: 0
   _creatureImage: {fileID: 4211690320054265106, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+  _creatureEXP: 15

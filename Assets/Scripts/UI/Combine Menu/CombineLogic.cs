@@ -45,6 +45,8 @@ public class CombineLogic : MonoBehaviour
 
     public void ClearSlots(bool killFlag = false)
     {
+        AudioManager._instance.PlaySound(1);
+
         if (slotA != null)
         {
             // Clear data from slotA
@@ -89,7 +91,9 @@ public class CombineLogic : MonoBehaviour
 
     public void CombineCreatures()
     {
-        if (slotA != null && slotB != null)
+        AudioManager._instance.PlaySound(1);
+
+        if (slotA._slotCreature != null && slotB._slotCreature != null)
         {
             CreatureData cdA = slotA._slotCreature.GetComponent<AIController>()._creatureData;
             CreatureData cdB = slotB._slotCreature.GetComponent<AIController>()._creatureData;

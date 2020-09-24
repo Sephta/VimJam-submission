@@ -128,6 +128,14 @@ public class DropHandler : MonoBehaviour
         Debug.Log(_pData._currCreatureData == null);
         if (_pData._currCreatureData != null && !_pData._pi.inMenu)
         {
+            foreach (CreatureData cd in _pData._pi._toolBar)
+            {
+                if (_pData._currCreatureData == cd)
+                {
+                    _pData.isHolding = false;
+                    return;
+                }
+            }
             Debug.Log("adding creature to toolbar");
             _pData._pi._toolBar[slotNum - 1] = _pData._currCreatureData;
             slot.GetComponent<Image>().sprite = _pData._currCreatureData.CreatureImage;
