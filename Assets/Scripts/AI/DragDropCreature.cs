@@ -6,22 +6,18 @@ using UnityEngine.UI;
 public class DragDropCreature : MonoBehaviour
 {
     // PUBLIC VARS
+    public PlayerData _pData = null;
     public CreatureData _cData = null;
     public GameObject _cImage = null;
     public SpriteRenderer _renderer = null;
     public bool isHeld = false;
 
     // PRIVATE VARS
-    private PlayerData _pData = null;
     private GameObject _imageRef = null;
     private Vector3 mousePos = Vector3.zero;
 
 
-    void Awake()
-    {
-        if (GameObject.Find("PlayerMaster") != null)
-            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
-    }
+    // void Awake() {}
 
     void Start()
     {
@@ -31,6 +27,9 @@ public class DragDropCreature : MonoBehaviour
 
     void Update()
     {
+        if (_pData == null && GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (isHeld)
@@ -47,7 +46,7 @@ public class DragDropCreature : MonoBehaviour
             _pData.isHolding = true;
             _renderer.enabled = false;
             
-            if (_cImage != null)
+            if (_cImage != null && _cData != null)
             {
                 _imageRef = Instantiate(_cImage, new Vector3(mousePos.x, mousePos.y, 0f), Quaternion.identity);
                 _imageRef.name = "Held Creature";
@@ -70,7 +69,7 @@ public class DragDropCreature : MonoBehaviour
     void OnMouseUp()
     {
         isHeld = false;
-        _pData.isHolding = false;
+        // _pData.isHolding = false;
         _renderer.enabled = true;
 
         if (_imageRef != null)

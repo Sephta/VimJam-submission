@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: c3800a5f4edd2fd48855c77fcdb9aa29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6547065906924351149
+    second: Creature_EnvironmentTiles_0
+  - first:
+      213: 4644564278224610101
+    second: Creature_EnvironmentTiles_1
+  - first:
+      213: -1523030240009062869
+    second: Creature_EnvironmentTiles_2
+  - first:
+      213: 431239910756597711
+    second: Creature_EnvironmentTiles_3
+  - first:
+      213: 5820438082773394917
+    second: Creature_EnvironmentTiles_4
+  - first:
+      213: 2739313403127315318
+    second: Creature_EnvironmentTiles_5
+  - first:
+      213: -2976680235520372943
+    second: Creature_EnvironmentTiles_6
+  - first:
+      213: -2929320837784308955
+    second: Creature_EnvironmentTiles_7
+  - first:
+      213: 9066286296587158986
+    second: Creature_EnvironmentTiles_8
+  - first:
+      213: -7357440827080488511
+    second: Creature_EnvironmentTiles_9
+  - first:
+      213: -2073910118080020757
+    second: Creature_EnvironmentTiles_10
+  - first:
+      213: -864894000637088290
+    second: Creature_EnvironmentTiles_11
+  - first:
+      213: -953698759460153727
+    second: Creature_EnvironmentTiles_12
+  - first:
+      213: -3622363367683839879
+    second: Creature_EnvironmentTiles_13
+  - first:
+      213: -1893958859108915263
+    second: Creature_EnvironmentTiles_14
+  - first:
+      213: 6202323513431914475
+    second: Creature_EnvironmentTiles_15
+  - first:
+      213: 6618472725706488465
+    second: Creature_EnvironmentTiles_16
+  - first:
+      213: 1360835844624398687
+    second: Creature_EnvironmentTiles_17
+  - first:
+      213: 824267983692912679
+    second: Creature_EnvironmentTiles_18
+  - first:
+      213: 3583444698497311192
+    second: Creature_EnvironmentTiles_19
+  - first:
+      213: -115933407714873348
+    second: Creature_EnvironmentTiles_20
+  - first:
+      213: 8476585509133113762
+    second: Creature_EnvironmentTiles_21
+  - first:
+      213: -7090069338320953345
+    second: Creature_EnvironmentTiles_22
+  - first:
+      213: 3984685149148870533
+    second: Creature_EnvironmentTiles_23
+  - first:
+      213: 1901510682667334833
+    second: Creature_EnvironmentTiles_24
+  - first:
+      213: 2602336774906868442
+    second: Creature_EnvironmentTiles_25
+  - first:
+      213: 4149189000020578557
+    second: Creature_EnvironmentTiles_26
+  - first:
+      213: 3565833478040223987
+    second: Creature_EnvironmentTiles_27
+  - first:
+      213: -8896313938259947627
+    second: Creature_EnvironmentTiles_28
+  - first:
+      213: 845388953473724091
+    second: Creature_EnvironmentTiles_29
+  - first:
+      213: 5661677682944015151
+    second: Creature_EnvironmentTiles_30
+  - first:
+      213: 2984864530564948259
+    second: Creature_EnvironmentTiles_31
+  - first:
+      213: -472986391786290920
+    second: Creature_EnvironmentTiles_32
+  - first:
+      213: -2422842861507127023
+    second: Creature_EnvironmentTiles_33
+  - first:
+      213: -8886883343129244621
+    second: Creature_EnvironmentTiles_34
+  - first:
+      213: 7914050402498337206
+    second: Creature_EnvironmentTiles_35
+  - first:
+      213: -2603258508024118099
+    second: Creature_EnvironmentTiles_36
+  - first:
+      213: 582865763503957633
+    second: Creature_EnvironmentTiles_37
+  - first:
+      213: -5647118612365243655
+    second: Creature_EnvironmentTiles_38
+  - first:
+      213: -519131732672926527
+    second: Creature_EnvironmentTiles_39
+  - first:
+      213: -4715305902029920661
+    second: Creature_EnvironmentTiles_40
+  - first:
+      213: 6580654897442551972
+    second: Creature_EnvironmentTiles_41
+  - first:
+      213: 7855031767981467371
+    second: Creature_EnvironmentTiles_42
+  - first:
+      213: 622201274625953364
+    second: Creature_EnvironmentTiles_43
+  - first:
+      213: 1106156162832596349
+    second: Creature_EnvironmentTiles_44
+  - first:
+      213: 655355090077979288
+    second: Creature_EnvironmentTiles_45
+  - first:
+      213: -1514345557795076365
+    second: Creature_EnvironmentTiles_46
+  - first:
+      213: 7256694477205196380
+    second: Creature_EnvironmentTiles_47
+  - first:
+      213: -3808704734054991693
+    second: Creature_EnvironmentTiles_48
+  - first:
+      213: -2774745859276592173
+    second: Creature_EnvironmentTiles_49
+  - first:
+      213: -2974852449628417099
+    second: Creature_EnvironmentTiles_50
+  - first:
+      213: 7624253877028210187
+    second: Creature_EnvironmentTiles_51
+  - first:
+      213: -2009875731581612085
+    second: Creature_EnvironmentTiles_52
+  - first:
+      213: 7531402049009656089
+    second: Creature_EnvironmentTiles_53
+  - first:
+      213: 5767231168563938049
+    second: Creature_EnvironmentTiles_54
+  - first:
+      213: -518419892102096239
+    second: Creature_EnvironmentTiles_55
+  - first:
+      213: 4108728829681471420
+    second: Creature_EnvironmentTiles_56
+  - first:
+      213: -2010849926622347585
+    second: Creature_EnvironmentTiles_57
+  - first:
+      213: 7098915694540553885
+    second: Creature_EnvironmentTiles_58
+  - first:
+      213: -8968774012682865620
+    second: Creature_EnvironmentTiles_59
+  - first:
+      213: 6786107642547028720
+    second: Creature_EnvironmentTiles_60
+  - first:
+      213: 697827577939193665
+    second: Creature_EnvironmentTiles_61
+  - first:
+      213: 3100565946354801108
+    second: Creature_EnvironmentTiles_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daeeb4721c9dbda50800000000000000
+      internalID: 6547065906924351149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533eb046a9ec47040800000000000000
+      internalID: 4644564278224610101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26f41ae01c1ddae0800000000000000
+      internalID: -1523030240009062869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf3e9df9621cf500800000000000000
+      internalID: 431239910756597711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e52dd8299956c050800000000000000
+      internalID: 5820438082773394917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee70c35cbdf733e0800000000000000
+      internalID: -2073910118080020757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edde8a32d774ff3f0800000000000000
+      internalID: -864894000637088290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18695abf708c3c2f0800000000000000
+      internalID: -953698759460153727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97821dd85b7cabdc0800000000000000
+      internalID: -3622363367683839879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7eb97c37e47b5e0800000000000000
+      internalID: -1893958859108915263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffed8f0e2f146ef0800000000000000
+      internalID: -115933407714873348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a95a141c91e2a570800000000000000
+      internalID: 8476585509133113762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff9d7860830b9d90800000000000000
+      internalID: -7090069338320953345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587fac808027c4730800000000000000
+      internalID: 3984685149148870533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc3ff824e5836a10800000000000000
+      internalID: 1901510682667334833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Creature_EnvironmentTiles_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8110cf5f16d9f69f0800000000000000
+      internalID: -472986391786290920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

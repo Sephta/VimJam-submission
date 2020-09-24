@@ -42,8 +42,15 @@ public class PlayerInventory : MonoBehaviour
         if (_playerEXP < 0)
             _playerEXP = 0;
 
-        if (GameObject.Find("PlayerMaster") != null)
+        // if (GameObject.Find("PlayerMaster") != null)
+        //     inMenu = true;
+        // else
+        //     inMenu = false;
+
+        if (SceneManager.GetSceneAt(1).name == "Main")
+        {
             inMenu = true;
+        }
         else
             inMenu = false;
     }

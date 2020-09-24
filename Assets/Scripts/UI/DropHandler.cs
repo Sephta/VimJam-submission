@@ -16,11 +16,7 @@ public class DropHandler : MonoBehaviour
     EventSystem es = null;
 
 
-    void Awake()
-    {
-        if (GameObject.Find("PlayerMaster") != null)
-            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
-    }
+    // void Awake() {}
 
     void Start()
     {
@@ -28,12 +24,17 @@ public class DropHandler : MonoBehaviour
             _raycaster = GetComponent<GraphicRaycaster>();
         if (es == null)
             es = GameObject.Find("EventSystem").GetComponent<EventSystem>();
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
     }
 
     void Update()
     {
         if (Input.GetMouseButtonUp(0))
             DetectDrop();
+
+        if (_pData == null && GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
     }
 
     void DetectDrop()
@@ -123,10 +124,14 @@ public class DropHandler : MonoBehaviour
 
     private void AddCreatureToToolbar(int slotNum, GameObject slot)
     {
+        Debug.Log("Maybe working...");
+        Debug.Log(_pData._currCreatureData == null);
         if (_pData._currCreatureData != null && !_pData._pi.inMenu)
         {
+            Debug.Log("adding creature to toolbar");
             _pData._pi._toolBar[slotNum - 1] = _pData._currCreatureData;
             slot.GetComponent<Image>().sprite = _pData._currCreatureData.CreatureImage;
+            _pData.isHolding = false;
         }
     }
 }

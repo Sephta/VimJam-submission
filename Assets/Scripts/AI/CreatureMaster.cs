@@ -45,14 +45,13 @@ public class CreatureMaster : MonoBehaviour
     private GameObject refr = null;
 
 
-    void Awake()
-    {
-        if (GameObject.Find("PlayerMaster") != null)
-            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
-    }
+    // void Awake() {}
 
     void Start()
     {
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+
         if (GameObject.Find("PlayerInv") != null)
             _pi = GameObject.Find("PlayerInv").GetComponent<PlayerInventory>();
 
@@ -71,14 +70,18 @@ public class CreatureMaster : MonoBehaviour
 
     void Update()
     {
+        if (_pData == null && GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+
         CheckCreatureBounds();
-        if (_pi.inMenu)
+
+        if (_pi != null && _pi.inMenu)
             CheckToolBar();
     }
 
     private void CalculateAreaSpawns()
     {
-        // Debug.Log("Creatures should be spawning...");
+        Debug.Log("Creatures should be spawning...");
 
         for (int i = 0; i < spawnLimit; i++)
         {
@@ -118,7 +121,6 @@ public class CreatureMaster : MonoBehaviour
             if (runningTotal > p)
                 return (int)tiers[i];
         }
-
         return result;
     }
 
@@ -142,7 +144,7 @@ public class CreatureMaster : MonoBehaviour
 
         refr.name = _aic._creatureData.CreatureName + " - " + _aic._creatureID.ToString();
         _creatures.Add(refr);
-        // Debug.Log("Spawned: " + newCreature.CreatureName + " - " + _aic._creatureID);
+        Debug.Log("Spawned: " + newCreature.CreatureName + " - " + _aic._creatureID);
     }
 
     private void SpawnPlayerInventory()
@@ -204,8 +206,9 @@ public class CreatureMaster : MonoBehaviour
 
     private void CheckToolBar()
     {
-        foreach (CreatureData cd in _pData._pi._toolBar)
+        for (int i = 0; i < _pData._pi._toolBar.Count; i++)
         {
+            CreatureData cd = _pData._pi._toolBar[i];
             if (cd != null)
             {
                 _pData.AddCreature(cd);
