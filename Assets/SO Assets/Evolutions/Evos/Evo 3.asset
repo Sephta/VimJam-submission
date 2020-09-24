@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ea4104cf4d57644083caa8de8068701, type: 3}
-  m_Name: Evo01
+  m_Name: Evo 3
   m_EditorClassIdentifier: 
-  Creature01: {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
-  Creature02: {fileID: 11400000, guid: ae1dc51677e3a4a479d532505e69575f, type: 2}
-  ResultCreature: {fileID: 11400000, guid: ce56e609ed0101a44b063d8bbff3c5f5, type: 2}
+  Creature01: {fileID: 11400000, guid: 5d717ad208ff97e49a052eaf2dff9c3e, type: 2}
+  Creature02: {fileID: 11400000, guid: 232016b16114c52468a0fefb177d4a08, type: 2}
+  ResultCreature: {fileID: 11400000, guid: 976b325268ef95e4294cd4710d7e92b5, type: 2}

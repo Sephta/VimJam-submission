@@ -152,11 +152,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1b9e8aafd7e1e4ca377a064e6a8925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerEXP: 999999
+  _playerEXP: 0
+  _inventoryMax: 10
+  _currInventoryAmount: 0
   _creatureType:
   - {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
   - {fileID: 11400000, guid: ae1dc51677e3a4a479d532505e69575f, type: 2}
-  _creatureAmount: 0300000002000000
+  - {fileID: 11400000, guid: 491d6dbd2a22e6244bd8980c695d92da, type: 2}
+  - {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
+  - {fileID: 11400000, guid: 1d26d15abe2402f438355bbdc5432e2c, type: 2}
+  - {fileID: 11400000, guid: 5d717ad208ff97e49a052eaf2dff9c3e, type: 2}
+  - {fileID: 11400000, guid: c271c57b296e4574a929422db6b4b8ee, type: 2}
+  - {fileID: 11400000, guid: 232016b16114c52468a0fefb177d4a08, type: 2}
+  _creatureAmount: 0100000001000000010000000100000001000000010000000100000001000000
+  _toolBar:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _dexList: []
+  inMenu: 0
 --- !u!4 &782843517
 Transform:
   m_ObjectHideFlags: 0

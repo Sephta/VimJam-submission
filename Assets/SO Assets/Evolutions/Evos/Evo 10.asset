@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea4104cf4d57644083caa8de8068701, type: 3}
+  m_Name: Evo 10
+  m_EditorClassIdentifier: 
+  Creature01: {fileID: 11400000, guid: 8a5bffabf84d0bd4d9a124d5ab81e521, type: 2}
+  Creature02: {fileID: 11400000, guid: 7fc624a9d72845a4392c0a04d96d9e42, type: 2}
+  ResultCreature: {fileID: 11400000, guid: aad8b04218e11ea4f8f6fcc5bbbf62b8, type: 2}

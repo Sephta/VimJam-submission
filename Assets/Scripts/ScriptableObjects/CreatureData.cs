@@ -9,10 +9,12 @@ public class CreatureData : ScriptableObject
     [SerializeField] private string _creatureName = "";
     [SerializeField] private int _creatureID = 0;
     [SerializeField] private Sprite _creatureImage = null;
+    [SerializeField] private int _creatureEXP = 0;
 
 
     // PUBLIC DATA
     public string CreatureName { get { return _creatureName; } }
     public int CreatureID { get { return _creatureID; } }
     public Sprite CreatureImage { get { return _creatureImage; } }
+    public int CreatureEXP { get { return _creatureEXP; } }
 }

@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c8339b95855f37428fb5fcadc731262, type: 3}
-  m_Name: Aloemon Asset
+  m_Name: Tabbymon Asset
   m_EditorClassIdentifier: 
-  _creatureName: Aloemon
+  _creatureName: Tabbymon
   _creatureID: 0
-  _creatureImage: {fileID: 1913543167974458854, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
-  _creatureEXP: 10
+  _creatureImage: {fileID: -8464040554697439902, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}

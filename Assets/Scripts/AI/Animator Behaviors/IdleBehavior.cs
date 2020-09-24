@@ -15,6 +15,7 @@ public class IdleBehavior : StateMachineBehaviour
 
     // PRIVATE VARS
     [SerializeField, ReadOnly] private Vector2 direction = Vector2.zero;
+    [SerializeField, ReadOnly] private PlayerData _pData = null;
 
     private GameObject _child = null;
     private AIController _aic = null;
@@ -28,6 +29,8 @@ public class IdleBehavior : StateMachineBehaviour
             _aic = animator.transform.gameObject.GetComponent<AIController>();
         if (_crb == null)
             _crb = _child.GetComponent<Rigidbody2D>();
+        if (GameObject.Find("PlayerMaster") != null)
+            _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
         
        FindNewDestination(animator);
        GetMousePos();
@@ -45,6 +48,10 @@ public class IdleBehavior : StateMachineBehaviour
 
         if (Vector3.Distance(_child.transform.position, mousePos) < distThreshold)
         {
+            if (_pData != null && _pData.isHolding && _pData._currItemData != null && _pData._currItemData.ItemType == ItemClass.iType.Food)
+            {
+                animator.SetBool("isHoldingFood", true);
+            }
             animator.SetBool("mouseClose", true);
         }
 

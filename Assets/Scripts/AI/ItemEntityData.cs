@@ -43,6 +43,9 @@ public class ItemEntityData : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isHeld = true;
+            _pData.isHolding = true;
+            _pData._currItemData = _itemData;
+            _pData._currItem = gameObject;
         }
     }
 
@@ -51,6 +54,7 @@ public class ItemEntityData : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isHeld = false;
+            _pData.isHolding = false;
         }
     }
 }

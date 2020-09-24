@@ -14,3 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EvoList:
   - {fileID: 11400000, guid: 5d70f0990b0fac44abafadf7aed0d25d, type: 2}
+  - {fileID: 11400000, guid: dcd86b3d7cdc6cf42a603d2db6d92630, type: 2}
+  - {fileID: 11400000, guid: 05973aa97048e6d43b6ec0c9e8ebea93, type: 2}
+  - {fileID: 11400000, guid: d231b20b7f4793640a238597365675c1, type: 2}
+  - {fileID: 11400000, guid: 4908d5fdadbadbf4cbfad3e311be296c, type: 2}
+  - {fileID: 11400000, guid: d5ae53b7186a1de419faf71d3d36d14c, type: 2}
+  - {fileID: 11400000, guid: f52c2ba354af3de4da2dce36cfad12a6, type: 2}
+  - {fileID: 11400000, guid: b9ee9721f0f2a9043bdd022f69e408c8, type: 2}
+  - {fileID: 11400000, guid: 5b0024fa05d04fe4ebf3579258bce1a8, type: 2}
+  - {fileID: 11400000, guid: 7567cea81ef3dbd40b6bc485afab6154, type: 2}

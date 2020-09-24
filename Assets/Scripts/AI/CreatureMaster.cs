@@ -26,6 +26,7 @@ public class CreatureMaster : MonoBehaviour
 
     [Header("Player Data")]
     public PlayerData _pData = null;
+    public PlayerInventory _pi = null;
 
     public enum CM_Mode
     {
@@ -52,10 +53,14 @@ public class CreatureMaster : MonoBehaviour
 
     void Start()
     {
+        if (GameObject.Find("PlayerInv") != null)
+            _pi = GameObject.Find("PlayerInv").GetComponent<PlayerInventory>();
+
         switch(_type)
         {
             case CM_Mode.main:
-                SpawnPlayerInventory();
+                if (_pData._pi != null)
+                    SpawnPlayerInventory();
                 break;
 
             case CM_Mode.local:
@@ -67,6 +72,8 @@ public class CreatureMaster : MonoBehaviour
     void Update()
     {
         CheckCreatureBounds();
+        if (_pi.inMenu)
+            CheckToolBar();
     }
 
     private void CalculateAreaSpawns()
@@ -191,6 +198,19 @@ public class CreatureMaster : MonoBehaviour
              || child.transform.position.y > SceneBounds[0] || child.transform.position.y < SceneBounds[2])
             {
                 child.transform.position = FindRandomPos(SceneBounds);
+            }
+        }
+    }
+
+    private void CheckToolBar()
+    {
+        foreach (CreatureData cd in _pData._pi._toolBar)
+        {
+            if (cd != null)
+            {
+                _pData.AddCreature(cd);
+                SpawnCreature(cd);
+                _pData._pi._toolBar[_pData._pi._toolBar.IndexOf(cd)] = null;
             }
         }
     }

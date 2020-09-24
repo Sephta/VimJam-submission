@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
@@ -42,8 +43,11 @@ public class PlayerData : MonoBehaviour
         {
             _currCreatureData = null;
             _currCreature = null;
+            _currItemData = null;
+            _currItem = null;
         }
-        CheckInv();
+        if (_pi != null)
+            CheckInv();
     }
 
     // void FixedUpdate() {}
@@ -63,7 +67,10 @@ public class PlayerData : MonoBehaviour
     {
         if (_pi._creatureType.Contains(toRemove))
         {
-            _pi._creatureAmount[_pi._creatureType.IndexOf(toRemove)]--;
+            int index = _pi._creatureType.IndexOf(toRemove);
+            _pi._creatureAmount[index]--;
+            if (_pi._creatureAmount[index] < 0)
+                _pi._creatureAmount[index] = 0;
         }
         else
         {

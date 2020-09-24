@@ -72,9 +72,22 @@ public class DropHandler : MonoBehaviour
             }
 
             if (result.gameObject.name == "Shop Item")
-            {
                 SpawnItemInHand(result.gameObject);
-            }
+
+            if (result.gameObject.name == "Free Menu")
+                FreeCreature();
+            
+            if (result.gameObject.name == "Toolbar Slot 01")
+                if (_pData._pi != null)
+                    AddCreatureToToolbar(1, result.gameObject);
+
+            if (result.gameObject.name == "Toolbar Slot 02")
+                if (_pData._pi != null)
+                    AddCreatureToToolbar(2, result.gameObject);
+
+            if (result.gameObject.name == "Toolbar Slot 03")
+                if (_pData._pi != null)
+                    AddCreatureToToolbar(3, result.gameObject);
         }
     }
 
@@ -86,6 +99,34 @@ public class DropHandler : MonoBehaviour
             Debug.Log("Item Grabbed: " + shopItem.ItemName);
             GameObject refr = Instantiate(_itemEntity, new Vector3(-15.5f, -0.61f , 0f), Quaternion.identity, _pData.transform);
             refr.GetComponent<ItemEntityData>()._itemData = shopItem;
+        }
+    }
+
+    private void FreeCreature()
+    {
+        PlayerData _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
+
+        if (_pData != null)
+        {
+            if (_pData._currCreature != null && _pData._currCreatureData != null)
+            {
+                _pData.RemoveCreature(_pData._currCreatureData);
+                _cMaster._creatures.Remove(_pData._currCreature);
+                _pData._pi._playerEXP += _pData._currCreatureData.CreatureEXP;
+                Destroy(_pData._currCreature);
+                _pData.isHolding = false;
+                _pData._pi._currInventoryAmount -= 1;
+                _pData._pi._currInventoryAmount = Mathf.Clamp(_pData._pi._currInventoryAmount, 0, _pData._pi._inventoryMax);
+            }
+        }
+    }
+
+    private void AddCreatureToToolbar(int slotNum, GameObject slot)
+    {
+        if (_pData._currCreatureData != null && !_pData._pi.inMenu)
+        {
+            _pData._pi._toolBar[slotNum - 1] = _pData._currCreatureData;
+            slot.GetComponent<Image>().sprite = _pData._currCreatureData.CreatureImage;
         }
     }
 }
