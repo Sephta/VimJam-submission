@@ -2632,15 +2632,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: commonSpawns.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: uncommonSpawns.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: rareSpawns.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: tiers.Array.size
@@ -2665,7 +2665,7 @@ PrefabInstance:
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: rareSpawns.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: a34201ab5b6098b42ae18c8916b9b7fe, type: 2}
+      objectReference: {fileID: 11400000, guid: 65837cd2ce5d30a47969efc9d8dc1ad3, type: 2}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: SceneBounds.Array.data[0]
       value: 7
@@ -2696,11 +2696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: weightedTable.Array.data[1]
-      value: 200
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: weightedTable.Array.data[2]
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: _type
@@ -2712,7 +2712,7 @@ PrefabInstance:
       objectReference: {fileID: 447474554}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: spawnLimit
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: commonSpawns.Array.data[1]
@@ -2725,7 +2725,27 @@ PrefabInstance:
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: uncommonSpawns.Array.data[1]
       value: 
+      objectReference: {fileID: 11400000, guid: a34201ab5b6098b42ae18c8916b9b7fe, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: rareSpawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: rareSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: uncommonSpawns.Array.data[2]
+      value: 
       objectReference: {fileID: 11400000, guid: ce56e609ed0101a44b063d8bbff3c5f5, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: commonSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 491d6dbd2a22e6244bd8980c695d92da, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: rareSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
     - target: {fileID: 4024927840463220310, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: m_Name
       value: CreatureMaster

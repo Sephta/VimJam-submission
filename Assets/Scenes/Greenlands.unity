@@ -3190,15 +3190,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: commonSpawns.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
-      propertyPath: uncommonSpawns.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: uncommonSpawns.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: rareSpawns.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: tiers.Array.size
@@ -3219,11 +3219,11 @@ PrefabInstance:
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: uncommonSpawns.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: ae1dc51677e3a4a479d532505e69575f, type: 2}
+      objectReference: {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: rareSpawns.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 65837cd2ce5d30a47969efc9d8dc1ad3, type: 2}
+      objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: SceneBounds.Array.data[0]
       value: 7
@@ -3250,11 +3250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: weightedTable.Array.data[0]
-      value: 600
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: weightedTable.Array.data[1]
-      value: 390
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: weightedTable.Array.data[2]
@@ -3270,20 +3270,56 @@ PrefabInstance:
       objectReference: {fileID: 447474554}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: spawnLimit
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: uncommonSpawns.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 491d6dbd2a22e6244bd8980c695d92da, type: 2}
+      objectReference: {fileID: 11400000, guid: c271c57b296e4574a929422db6b4b8ee, type: 2}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: commonSpawns.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: ae1dc51677e3a4a479d532505e69575f, type: 2}
+      objectReference: {fileID: 11400000, guid: 5d717ad208ff97e49a052eaf2dff9c3e, type: 2}
     - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: uncommonSpawns.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: c271c57b296e4574a929422db6b4b8ee, type: 2}
+      objectReference: {fileID: 11400000, guid: 976b325268ef95e4294cd4710d7e92b5, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: commonSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 232016b16114c52468a0fefb177d4a08, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: commonSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d717ad208ff97e49a052eaf2dff9c3e, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: weightedTable.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: tiers.Array.data[3]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: rareSpawns.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: uncommonSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 491d6dbd2a22e6244bd8980c695d92da, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: uncommonSpawns.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: rareSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
+    - target: {fileID: 4024927840463220304, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
+      propertyPath: rareSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 65837cd2ce5d30a47969efc9d8dc1ad3, type: 2}
     - target: {fileID: 4024927840463220310, guid: 0de92dba001e6214aac0b71b90b8a967, type: 3}
       propertyPath: m_Name
       value: CreatureMaster

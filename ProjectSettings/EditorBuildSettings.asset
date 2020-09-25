@@ -20,10 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desert.unity
     guid: cbfd366ec9aed624db5e7f676804df3a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tundra.unity
     guid: 2d9400759656779468205b0cb02c5892
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Wetlands.unity
     guid: fc3b37b6f2f8ce0478280482faa39998
   m_configObjects: {}

@@ -8,6 +8,7 @@ public class DexEntry : MonoBehaviour
 {
     public CreatureData _entry = null;
     public Image _entryImage = null;
+    public Text _entryText = null;
     [ReadOnly] public bool _discovered = false;
 
     [ReadOnly] public PlayerInventory _pi = null;
@@ -23,6 +24,9 @@ public class DexEntry : MonoBehaviour
             _pi = GameObject.Find("PlayerInv").GetComponent<PlayerInventory>();
         else
             Debug.Log("Warning. Player Inv reference in " + gameObject.name + " is null.");
+        
+        if (_entryText != null)
+            _entryText.text = "???";
     }
 
     void Update()
@@ -40,5 +44,7 @@ public class DexEntry : MonoBehaviour
     void ChangeImage()
     {
         _entryImage.sprite = _entry.CreatureImage;
+        _entryImage.color = Color.white;
+        _entryText.text = _entry.CreatureName;
     }
 }

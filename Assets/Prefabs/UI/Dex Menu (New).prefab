@@ -634,10 +634,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Agavemon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6889962116739639628, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.03529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -28.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 86.25769
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 27.157917
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36.421
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: ae1dc51677e3a4a479d532505e69575f, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Agavemon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &5297053789758581 stripped
@@ -740,10 +780,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Lagomorphamon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1173112000720570263, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 132.21721
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.08715578
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9961947
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 42.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 7fc624a9d72845a4392c0a04d96d9e42, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Lagomorphamon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &817393476720454682 stripped
@@ -846,10 +934,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Brahmon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5564405780835860219, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: aad8b04218e11ea4f8f6fcc5bbbf62b8, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Brahmon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &1092805651581890421 stripped
@@ -952,10 +1064,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Cryogenomon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -652795740723301806, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -28.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 109.71857
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 8e7189410b537ee4792f71404bbaaa03, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Cryogenomon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &1178625549533986245 stripped
@@ -1058,10 +1202,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Lepumon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1091741334894721673, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.03529412
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 5d717ad208ff97e49a052eaf2dff9c3e, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Lepumon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &1575870236881497528 stripped
@@ -1164,10 +1332,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Saguaromon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5106214369077804176, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.03529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -28.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 93.022385
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 37.97
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: ce56e609ed0101a44b063d8bbff3c5f5, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Saguramon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &1784000512048295060 stripped
@@ -1270,10 +1474,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Pyrrhocorimon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4959017717158820329, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 123.06914
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: a34201ab5b6098b42ae18c8916b9b7fe, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Pyrrhocorimon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &2254094310964204989 stripped
@@ -1376,10 +1612,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Oureamon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7856583698965789001, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.011764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.011764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 86.22061
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 8a5bffabf84d0bd4d9a124d5ab81e521, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Oureamon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &2927697720674443021 stripped
@@ -1482,10 +1750,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Tundramon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4211690320054265106, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.039215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 91.792435
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 37.97
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 232016b16114c52468a0fefb177d4a08, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Tundramon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &3381763988249813713 stripped
@@ -1588,10 +1892,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Tabbymon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8464040554697439902, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.011764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -26.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 86.25769
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: db503f70db9c4c84ca70ee227ba06f96, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Tabbymon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &4798246965556763971 stripped
@@ -1694,10 +2030,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Bogamon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1111131430764313926, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 491d6dbd2a22e6244bd8980c695d92da, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: 'Bogamon
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &4970222087841282482 stripped
@@ -1800,10 +2166,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Pantheramon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8991599638410137312, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.011764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -22.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 113.59311
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 65837cd2ce5d30a47969efc9d8dc1ad3, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Pantheramon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &6409940950679217856 stripped
@@ -1904,12 +2302,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 144127262847156949, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: m_Name
-      value: Dex Entry (Felideamon)
+      value: Dex Entry (Felidaemon)
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5727156241454194638, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -27.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 92.45438
       objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: d3b719638feba3044b49a833f71d9224, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Felidaemon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &7441877878781549475 stripped
@@ -2012,10 +2442,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Pyroceremon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4822311544936768334, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -29.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 106.303925
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: edec8593f4d9c2e42903bcd33da63e7a, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Pyroceremon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &7707872404118771802 stripped
@@ -2118,10 +2580,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Leporidamon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3987737622296476140, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -24.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 105.32181
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 37.97
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 976b325268ef95e4294cd4710d7e92b5, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Leporidamon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &7773935413155819570 stripped
@@ -2224,10 +2726,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Covomon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8959744555727877987, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.039215688
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 1d26d15abe2402f438355bbdc5432e2c, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Covomon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &8074335545792030187 stripped
@@ -2330,10 +2856,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Aloemon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1913543167974458854, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: 8b35f24d3d9b1c041988400c1036b35a, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Aloemon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &8094440004470997071 stripped
@@ -2436,10 +2990,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dex Entry (Phlebotomon)
       objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5806433246110305416, guid: e4db0eaee2648ac4788826c65f8e6735, type: 3}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.015686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.023529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 144127262847156951, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.039215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494317574658680680, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 88.71759
+      objectReference: {fileID: 0}
     - target: {fileID: 3474813211671823568, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
       propertyPath: _entry
       value: 
       objectReference: {fileID: 11400000, guid: c271c57b296e4574a929422db6b4b8ee, type: 2}
+    - target: {fileID: 5808218928190819454, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
+      propertyPath: m_Text
+      value: Phlebotomon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee0f162cb70e504db97a841d9b838d9, type: 3}
 --- !u!224 &8912997196548224206 stripped
