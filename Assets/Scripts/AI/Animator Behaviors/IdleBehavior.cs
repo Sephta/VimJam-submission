@@ -21,6 +21,10 @@ public class IdleBehavior : StateMachineBehaviour
     private AIController _aic = null;
     private Rigidbody2D _crb = null;
 
+    [SerializeField, ReadOnly] private bool waitTime = false;
+    [SerializeField, ReadOnly] private float _timeLeft = 0f;
+    [SerializeField, ReadOnly] private int _time = 0;
+
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (_child == null)
@@ -32,7 +36,7 @@ public class IdleBehavior : StateMachineBehaviour
         if (GameObject.Find("PlayerMaster") != null)
             _pData = GameObject.Find("PlayerMaster").GetComponent<PlayerData>();
         
-       FindNewDestination(animator);
+        direction = CalculateDirection();
        GetMousePos();
     }
 
@@ -55,45 +59,38 @@ public class IdleBehavior : StateMachineBehaviour
             animator.SetBool("mouseClose", true);
         }
 
-        if (Vector3.Distance(_child.transform.position, currDestination) < 2f || _aic.colStatus)
+        if (!waitTime)
         {
-            FindNewDestination(animator);
-            animator.transform.gameObject.GetComponent<AIController>().colStatus = false;
+            waitTime = true;
+            _time = Random.Range(0, 5);
+            _timeLeft = _time;
+
+            direction = CalculateDirection();
         }
         else
         {
-            float clampX = _child.transform.position.x - currDestination.x;
-            float clampY = _child.transform.position.y - currDestination.y;
-            clampX = Mathf.Clamp(clampX, -1f, 1f);
-            clampY = Mathf.Clamp(clampY, -1f, 1f);
+            _timeLeft -= Time.deltaTime;
+            _timeLeft = Mathf.Clamp(_timeLeft, 0, _time);
 
-            direction = new Vector2(clampX, clampY);
+            if (_timeLeft == 0)
+                waitTime = false;
+        }
 
-            _crb.AddForce(((direction * moveSpeed * -1f) - _crb.velocity) * Time.deltaTime, ForceMode2D.Impulse);
+        _crb.AddForce(((direction * moveSpeed * -1f) - _crb.velocity) * Time.deltaTime, ForceMode2D.Impulse);
+
+        if (Vector3.Distance(_child.transform.position, currDestination) < 2f || _aic.colStatus)
+        {
+            // FindNewDestination(animator);
+            direction = CalculateDirection();
+            animator.transform.gameObject.GetComponent<AIController>().colStatus = false;
         }
     }
-
-    // override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    // {
-       
-    // }
-
-    //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that processes and affects root motion
-    //}
-
-    // OnStateIK is called right after Animator.OnAnimatorIK()
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that sets up animation IK (inverse kinematics)
-    //}
-
 
     private Vector2 CalculateDirection(Vector2 destination)
     {
         float clampX = _child.transform.position.x - destination.x;
         float clampY = _child.transform.position.y - destination.y;
+
         clampX = Mathf.Clamp(clampX, -1f, 1f);
         clampY = Mathf.Clamp(clampY, -1f, 1f);
 
@@ -102,18 +99,17 @@ public class IdleBehavior : StateMachineBehaviour
         return result;
     }
 
-    // Bounds: y -> (-0.5, -7.5), x -> (-1.5, -15.5)
-    private void FindNewDestination(Animator animator)
+    private Vector2 CalculateDirection()
     {
-        Vector3 randomOffset = new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange));
+        float clampX = ((float)Random.Range(-100, 101)) / 100;
+        float clampY = ((float)Random.Range(-100, 101)) / 100;
 
-        Vector2 newDestination = new Vector2(_child.transform.position.y + randomOffset.x, _child.transform.position.y + randomOffset.y);
-        float clampX = newDestination.x;
-        float clampY = newDestination.y;
-        clampX = Mathf.Clamp(clampX, _aic.SceneBounds[3], _aic.SceneBounds[1]);
-        clampY = Mathf.Clamp(clampY, _aic.SceneBounds[0], _aic.SceneBounds[2]);
+        clampX = Mathf.Clamp(clampX, -1f, 1f);
+        clampY = Mathf.Clamp(clampY, -1f, 1f);
 
-        currDestination = new Vector3(clampX, clampY, 0f);
+        Vector2 result = new Vector2(clampX, clampY);
+
+        return result;
     }
 
     private void GetMousePos()

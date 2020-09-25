@@ -175,6 +175,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 128fa6790eb511f43a37deca6fb65441, type: 3}
   - {fileID: 8300000, guid: 9f7fd5caa7bc616459cc8a7f70ba1254, type: 3}
   - {fileID: 8300000, guid: 87b1c50eada6fcf44851954274ccd684, type: 3}
+  - {fileID: 8300000, guid: cd7bba2a83634d14eb58aad1537b6bd3, type: 3}
   _sources: []
 --- !u!4 &454677590
 Transform:

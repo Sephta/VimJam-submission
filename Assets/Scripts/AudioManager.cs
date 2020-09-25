@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class AudioManager : MonoBehaviour
     [Header("Instance Data")]
     public static AudioManager _instance;
     private bool gameStart = false;
+
+    [SerializeField, ReadOnly] private bool isPlaying = false;
 
     void Awake()
     {
@@ -36,5 +39,19 @@ public class AudioManager : MonoBehaviour
     public void PlaySound(int index)
     {
         _sources[index].PlayOneShot(_sources[index].clip);
+    }
+
+    void Update()
+    {
+        if (!isPlaying)
+        {
+            if (SceneManager.GetSceneAt(1).buildIndex == 2)
+            {
+                _sources[22].Play();
+                _sources[22].volume = GameSettings._instance._musicVolume;
+                _sources[22].loop = true;
+                isPlaying = true;
+            }
+        }
     }
 }

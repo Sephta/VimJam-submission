@@ -11,4 +11,9 @@ public class ChangeLocation : MonoBehaviour
         SceneManager.LoadSceneAsync(loadSceneIndex, LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync(unloadSceneIndex);
     }
+
+    public void StartButton()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

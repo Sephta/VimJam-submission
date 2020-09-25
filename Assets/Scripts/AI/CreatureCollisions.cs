@@ -6,7 +6,7 @@ public class CreatureCollisions : MonoBehaviour
 {
     public AIController aic = null;
 
-    void OnCollisionStay2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag == "Creature")
         {
